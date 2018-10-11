@@ -1,7 +1,7 @@
 import markovify
 
 # Get raw text as string.
-with open("/Users/Kate/Documents/markovify-master/test/tops.txt", encoding='utf8', errors='ignore') as f:
+with open("address to tops.txt"), encoding='utf8', errors='ignore') as f:
     text = f.read()
 
 # Build the model.
