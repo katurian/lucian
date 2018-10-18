@@ -2,7 +2,7 @@ import praw
 import feedparser
 import config
 
-reddit = praw.Reddit(user_agent = 'Top Comment Extraction (by /u/caturian)',
+reddit = praw.Reddit(user_agent = config.USER_AGENT,
                      client_id = config.CLIENT_ID, client_secret = config.CLIENT_SECRET,
                      username = config.USERNAME, password = config.PASSWORD)
 
