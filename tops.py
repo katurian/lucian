@@ -1,9 +1,10 @@
 import praw
 import feedparser
+import config
 
-reddit = praw.Reddit(user_agent='Top Comment Extraction (by /u/caturian)',
-                     client_id='XXXXXXXX', client_secret="XXXXXXXX",
-                     username='XXXXXXXX', password='XXXXXXXX')
+reddit = praw.Reddit(user_agent = 'Top Comment Extraction (by /u/caturian)',
+                     client_id = config.CLIENT_ID, client_secret = config.CLIENT_SECRET,
+                     username = config.USERNAME, password = config.PASSWORD)
 
 length = feedparser.parse(input('Enter an RSS feed:'))
 l = len(length)

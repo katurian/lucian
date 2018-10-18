@@ -1,7 +1,11 @@
+# Some "constants" are defined in module config.py, which you must make yourself.
+# More information can be found at github.com/katurian/lucian/wiki/config.py
+
 import markovify
+import config
 
 # Get raw text as string.
-with open("address to tops.txt"), encoding='utf8', errors='ignore') as f:
+with open(config.TOPS_PATH, encoding='utf8', errors='ignore') as f:
     text = f.read()
 
 # Build the model.
