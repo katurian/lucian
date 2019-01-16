@@ -1,12 +1,9 @@
-# Some "constants" are defined in module config.py, which you must make yourself.
-# More information can be found at github.com/katurian/lucian/wiki/config.py
-
 import markovify
-import config
 
 # Get raw text as string.
-with open(config.TOPS_PATH, encoding='utf8', errors='ignore') as f:
+with open("prop.txt", encoding='utf8', errors='ignore') as f:
     text = f.read()
+# please put your own *.txt file in the same folder as markgen.py
 
 # Build the model.
 text_model = markovify.Text(text)
